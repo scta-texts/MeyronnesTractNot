@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/out/critical.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/out/critical.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De differentia specifica inter notitiam intuitivam et abstractivam</title>
+                <author xml:id="FM">Francis of Meyronnes</author>
+                <editor>Luciana Cioca</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition n="0.0.0-dev">
+                    <date when="2011-10-04">July 19, 2018</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority>A Sentences Commentary Text Archive Project</authority>
+                <availability status="free">
+                    <p>Published under a <ref target="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License</ref></p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="V" n="vatican">Vat. Lat. 3026</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <variantEncoding method="parallel-segmentation" location="internal"/>
+            <schemaRef n="lbp-critical-1.0.0" url="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/1.0/critical.rng"/>
+            <editorialDecl>
+                <p>Encoding of this text has followed the recommendations of the LombardPress 1.0.0 guidelines for a critical edition</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc status="draft">
+            <listChange>
+                <change when="2018-07-19" status="draft" n="0.0.0">
+                    <p>File Started for the first time.</p>
+                </change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text type="critical" xml:lang="la">
+        <front> 
+            <div xml:id="include-list">
+                <xi:include href="https://raw.githubusercontent.com/lombardpress/lombardpress-lists/master/workscited.xml" xpointer="worksCited"/>
+                <xi:include href="https://raw.githubusercontent.com/lombardpress/lombardpress-lists/master/Prosopography.xml" xpointer="prosopography"/>
+            </div>
+            <div xml:id="starts-on">
+                <pb ed="#V" n="71-r"/><cb ed="#V" n="a"/>
+            </div>
+        </front>
+        <body>
+            <div xml:id="p3">
+                <head>An notitia intuitiva et abstractiva semper differant specie</head>
+                <p>Circa tertiam partem istius sermonis negotiando circa intuitivam <pb ed="#V" n="71-r"/>
+                    <cb ed="#V" n="b"/> et abstractivam notitias simul ponitur prima questio: an notitia intuitiva et abstractiva semper differant specie.</p>
+                <p>Et videtur quod sic, quia quecumque ex opposito dividuntur sub aliquo genere sunt </p>
+            </div>
+        </body>
+    </text>
+</TEI>
+
